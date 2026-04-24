@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/graf.svg" />
+    <link rel="canonical" href="https://paczkagrafa.pl/" />
+
+    <title>Paczka Grafa — Overlay, Ramki Rud i pliki Minecraft</title>
+    <meta
+      name="description"
+      content="Paczka Grafa — pobierz oficjalne overlaye, ramki do rud oraz dodatkowe pliki używane przez Grafa w Minecraft. Zawsze najnowsze wersje, prosto i bez reklam."
+    />
+    <meta name="author" content="Graf" />
+    <meta
+      name="keywords"
+      content="Paczka Grafa, Overlay Grafa, Ramki do rud, Minecraft, Graf, texture pack, resourcepack"
+    />
+    <meta name="theme-color" content="#1a1410" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="Paczka Grafa" />
+    <meta property="og:title" content="Paczka Grafa — Overlay, Ramki Rud i pliki Minecraft" />
+    <meta
+      property="og:description"
+      content="Pobierz oficjalne overlaye, ramki do rud oraz dodatkowe pliki używane przez Grafa w Minecraft."
+    />
+    <meta property="og:url" content="https://paczkagrafa.pl/" />
+    <meta property="og:image" content="https://paczkagrafa.pl/graf.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Paczka Grafa" />
+    <meta
+      name="twitter:description"
+      content="Overlaye, ramki do rud i pliki Minecraft Grafa — zawsze najnowsze."
+    />
+    <meta name="twitter:image" content="https://paczkagrafa.pl/graf.svg" />
+
+    <!-- No-flash theme: dark by default, respect saved preference -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var theme = saved === "light" ? "light" : "dark";
+          var el = document.documentElement;
+          el.classList.remove("light", "dark");
+          el.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Paczka Grafa",
+        "url": "https://paczkagrafa.pl/",
+        "inLanguage": "pl-PL",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://paczkagrafa.pl/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
